@@ -65,7 +65,7 @@ pipeline {
   post {
     success {
       sh "echo 'Send mail on success'"
-      // mail to:"me@example.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
+      mail to:"naveena.chidara@acsicorp.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
     }
     failure {
       sh "echo 'Send mail on failure'"
